@@ -1,0 +1,776 @@
+Prefix: '&3Меню гаджетов &6» &r'
+GUI-Menus:
+  Main: Главная
+  Hats: Шляпы
+  Animated Hats: Анимированные Шляпы
+  Particles: Частицы
+  Suits: Костюмы
+  Gadgets: Гаджеты
+  Pets: Питомцы
+  Morphs: Превращения
+  Banners: Баннеры
+  Emotes: Эмоции
+  Cloaks: Плащи
+  Purchase-Menu:
+    GUI-Name: Подтвердите покупку
+    Items:
+      Confirm:
+        Name: '&aПодтвердить'
+        Material: LIME_TERRACOTTA
+        Lore: ''
+      Cancel:
+        Name: '&cОтменить'
+        Material: RED_TERRACOTTA
+        Lore: ''
+  Confirm-Open-Mystery-Box-Menu:
+    GUI-Name: Подтвердите открытие
+    Items:
+      Open:
+        Name: '&aОткрыть'
+        Material: GREEN_WOOL
+        Lore:
+        - '&7Открытие Mystery Box.'
+        - ''
+        - '&7Это действие нельзя отменить!'
+      Cancel:
+        Name: '&cОтменить'
+        Material: RED_WOOL
+        Lore:
+        - '&7Вернуться к'
+        - '&7списку Mystery Box'
+  Mystery-Vault-Menu:
+    GUI-Name: Mystery Vault
+    Items:
+      Error:
+        Name: '&cОшибка!'
+        Material: RED_STAINED_GLASS_PANE
+        Lore:
+        - '&7У вас недостаточно &bMystery Boxes&7!'
+      Loading-Mystery-Boxes:
+        Name: '&cЗагрузка...'
+        Material: RED_STAINED_GLASS_PANE
+        Lore:
+        - '&7Загружаем ваши mystery boxes!'
+        - '&7Пожалуйста, перезагрузите меню.'
+      Mystery-Box-Information:
+        Name: '&aИнформация о Mystery Box'
+        Material: BOOK
+        Slot: 49
+        Lore:
+        - '&bMystery Boxes &7содержат много'
+        - '&7различных косметических вещей. Чтобы получить'
+        - '&bMystery Boxes&7, Вы всего лишь'
+        - '&7должен играть на сервере!'
+        - ''
+        - '&e5 последних найденных боксы:'
+        - '&71. {RECENT_LOOT_1}'
+        - '&72. {RECENT_LOOT_2}'
+        - '&73. {RECENT_LOOT_3}'
+        - '&74. {RECENT_LOOT_4}'
+        - '&75. {RECENT_LOOT_5}'
+        - ''
+        - '&7У вас: &b{MYSTERY_BOXES} Mystery Boxes'
+      Craft-Mystery-Boxes:
+        Name: '&aСкрафтить Mystery Boxes'
+        Material: ANVIL
+        Show: true
+        Slot: 50
+        Lore:
+        - '&7Когда вы будете получать предметы'
+        - '&7которые у вас есть, вы можете превратить их в'
+        - '&bмистическую &7пыль. Вы можете'
+        - '&7использовать её для крафта новых'
+        - '&7Mystery Boxes!'
+        - ''
+        - '&7У вас: &b{MYSTERY_DUST} Мистической пыли'
+        - '&eНажмите, чтобы открыть меню крафта.'
+      Gift-Inventory:
+        Name: '&aПодарки'
+        Show: true
+        Texture: http://textures.minecraft.net/texture/d2ac1c51807e261c12c4f2adbad36b8b2c497c277f7223ec244cb4608c59c
+        Slot: 48
+        Lore:
+        - '&7Отправляйте подарки друзьям и'
+        - '&7получите подарок взамен!'
+        - ''
+        - '&7Подарки, которые вы покупаете'
+        - '&7хранятся здесь.'
+        - ''
+        - '&7Подарок отправлен: &e{GIFT_SENT}'
+        - '&7Подарок получен от: &e{GIFT_RECEIVED}'
+        - ''
+        - '&eНажмите, чтобы увидить свои подарки!'
+        Material: head:d2ac1c51807e261c12c4f2adbad36b8b2c497c277f7223ec244cb4608c59c
+      Animations:
+        Name: '&aАнимации'
+        Material: REDSTONE
+        Show: true
+        Slot: 53
+        Lore:
+        - '&7Выбери анимацию'
+        - '&7которая будет при открытии'
+        - '&7mystery boxes.'
+      Open-Multiple-Boxes:
+        Name: '&cОткрыть несколько коробок'
+        Material: NETHER_STAR
+        Show: true
+        Slot: 51
+        Lore:
+        - '&7Открыть несколько коробок'
+        - '&7одновременно!'
+  Mystery-Box-Crafting-Menu:
+    GUI-Name: Крафт Mystery Box
+    Items:
+      1-Star:
+        Name: '&bMystery Box #1'
+        Material: ENDER_CHEST
+        Price: 100
+        Lore:
+        - '&7Этот Mystery Box содержит'
+        - '&7предметы:'
+        - ''
+        - '&aОбычные&7: &b4'
+        - '&9Редкие&7: &b1'
+        - '&5Эпические&7: &b1'
+        - '&6Легендарные items&7: &b1'
+        - ''
+        - '&7Качество: &e✰&7✰✰✰✰'
+        Show: true
+        Slot: 9
+      2-Star:
+        Name: '&bMystery Box #2'
+        Material: ENDER_CHEST
+        Price: 200
+        Lore:
+        - '&7This Mystery Box contains of'
+        - '&7the following:'
+        - ''
+        - '&aCommon items&7: &b3'
+        - '&9Rare items&7: &b2'
+        - '&5Epic items&7: &b1'
+        - '&6Legendary items&7: &b1'
+        - ''
+        - '&7Качество: &e✰✰&7✰✰✰'
+        Show: true
+        Slot: 11
+      3-Star:
+        Name: '&bMystery Box #3'
+        Material: ENDER_CHEST
+        Price: 300
+        Lore:
+        - '&7Этот Mystery Box содержит'
+        - '&7предметы:'
+        - ''
+        - '&aОбычные&7: &b4'
+        - '&9Редкие&7: &b1'
+        - '&5Эпические&7: &b1'
+        - '&6Легендарные items&7: &b1'
+        - ''
+        - '&7Качество: &e✰✰✰&7✰✰'
+        Show: true
+        Slot: 13
+      4-Star:
+        Name: '&bMystery Box #4'
+        Material: ENDER_CHEST
+        Price: 400
+        Lore:
+        - '&7Этот Mystery Box содержит'
+        - '&7предметы:'
+        - ''
+        - '&aОбычные&7: &b4'
+        - '&9Редкие&7: &b1'
+        - '&5Эпические&7: &b1'
+        - '&6Легендарные items&7: &b1'
+        - ''
+        - '&7Качество: &e✰✰✰✰&7✰'
+        Show: true
+        Slot: 15
+      5-Star:
+        Name: '&bMystery Box #5'
+        Material: ENDER_CHEST
+        Price: 550
+        Lore:
+        - '&7Этот Mystery Box содержит'
+        - '&7предметы:'
+        - ''
+        - '&aОбычные&7: &b4'
+        - '&9Редкие&7: &b1'
+        - '&5Эпические&7: &b1'
+        - '&6Легендарные items&7: &b1'
+        - ''
+        - '&7Качество: &e✰✰✰✰✰'
+        Show: true
+        Slot: 17
+  Gift-Inventory-Menu:
+    GUI-Name: Подарочное меню
+    Items:
+      Mystery-Gift:
+        Name: '&aMystery Gift (5-наборов)'
+        Material: ENDER_CHEST
+        Lore:
+        - '&7Этот подарок содержит &a5'
+        - '&bMystery Boxes&7.'
+        - ''
+        - '&eНажми, чтобы отправить игроку.'
+      Error:
+        Name: '&cОШИБКА!'
+        Material: RED_STAINED_GLASS_PANE
+        Lore:
+        - '&7У вас недостаточно &bподарочных наборов&7!'
+  Send-Gift-Menu:
+    GUI-Name: Игроки онлайн
+    Items:
+      Mystery-Gift:
+        Name: '&aMystery Gift (5-наборов)'
+        Material: ENDER_CHEST
+        Lore:
+        - '&7Этот подарок содержит &a5'
+        - '&bMystery Boxes&7.'
+        - ''
+        - '&bВыберите игрока, чтобы отправить ему подарок!'
+      Player:
+        Lore:
+        - ''
+        - '&aНажми, чтобы отправить подарок!'
+  Confirm-Send-Gift-Menu:
+    GUI-Name: Подтверждение отправки
+    Items:
+      Player:
+        Name: '&7{PLAYER}'
+        Lore: ''
+      Mystery-Gift:
+        Name: '&aMystery Gift (5-наборов)'
+        Material: ENDER_CHEST
+        Lore:
+        - '&7Этот подарок содержит &a5'
+        - '&bMystery Boxes&7.'
+      Confirm:
+        Name: '&aПодтвердить'
+        Material: LIME_TERRACOTTA
+        Lore: ''
+      Cancel:
+        Name: '&cОтменить'
+        Material: RED_TERRACOTTA
+        Lore: ''
+  Settings-Menu:
+    GUI-Name: Настройки
+    Items:
+      Ignore-Cooldown:
+        Name: '&aИгнорировать время восстановления'
+        Material: BARRIER
+        Lore: ''
+        Show: true
+        Slot: 20
+      Self-Morph-View:
+        Name: '&aВидимость своих превращений'
+        Material: ENDER_EYE
+        Lore: ''
+        Show: true
+        Slot: 24
+      Enabled:
+        Name: '&aВключено'
+        Material: LIME_WOOL
+        Lore: ''
+      Disabled:
+        Name: '&cОтключено'
+        Material: RED_WOOL
+        Lore: ''
+  Mystery-Vault-Animations-Menu:
+    GUI-Name: Анимации
+    Items:
+      Random-Mystery-Vault-Animation:
+        Name: '&eРандомная анимация'
+        Material: ENDER_PEARL
+        Slot: 40
+        Show: true
+        Lore:
+        - '&7Давайте сделаем выбор'
+        - '&7анимации которую вы бы хотели'
+        - '&7за вас.'
+        - ''
+        - '&bСтатус: {STATUS}'
+        - ''
+  Open-Multiple-Boxes-Menu:
+    GUI-Name: Открытие нескольких Mystery Boxes
+    Items:
+      Open-20-Boxes:
+        Name: '&aОткрыть 20 коробок'
+        Material: NETHER_STAR
+        Lore:
+        - '&7Откройте 20 коробок'
+        - '&7за раз.'
+      Open-50-Boxes:
+        Name: '&aОткрытие 50 коробок'
+        Material: NETHER_STAR
+        Lore:
+        - '&7Откройте 50 коробок'
+        - '&7за раз.'
+      Open-250-Boxes:
+        Name: '&aОткрытие 250 коробок'
+        Material: NETHER_STAR
+        Lore:
+        - '&7Откройте 250 коробок'
+        - '&7за раз.'
+  Confirm-Open-Multiple-Boxes-Menu:
+    GUI-Name: Потдверждение открытия
+    Items:
+      Confirm:
+        Name: '&aПодтвердить'
+        Material: LIME_TERRACOTTA
+        Lore: ''
+      Cancel:
+        Name: '&cОтменить'
+        Material: RED_TERRACOTTA
+        Lore: ''
+Items:
+  Go-Back:
+    Name: '&eВернуться назад'
+    Material: ARROW
+    Show: true
+    Lore: ''
+  Previous-Page:
+    Name: '&eПредыдущая страница'
+    Material: ARROW
+    Lore:
+    - '&eСтраница {PAGE}'
+  Next-Page:
+    Name: '&eСледующая страница'
+    Material: ARROW
+    Lore:
+    - '&eСтраница {PAGE}'
+  Already-Selected:
+    Show-In-Lore: true
+    Lore:
+    - ''
+    - '&7Уже выбрана'
+  Click-To-Select:
+    Show-In-Lore: true
+    Lore:
+    - ''
+    - '&eНажмите, чтобы выбрать'
+  Unlocked:
+    Show-In-Lore: true
+    Lore:
+    - ''
+    - '&7Разблокировано: &c{HASPERMISSION}/{SIZE} &8({PERCENTAGE}%)'
+    - ''
+    - '&eНажмите, чтобы посмотреть!'
+  Settings:
+    Name: '&eНастройки'
+    Material: COMPARATOR
+    Show: true
+    Lore:
+    - '&7Позволяет редактировать и управлять'
+    - '&7вашими настройками.'
+  MainMenu-Item:
+    Name: '&aГлавное меню'
+    Material: TRAPPED_CHEST
+    Show: true
+    Lore:
+    - '&7Мистическая пыль: &b{MYSTERY_DUST}'
+    - '&7Мистические коробки: &b{MYSTERY_BOXES}'
+  Morph-Slimeball:
+    Name: '&aАктивировать превращение'
+  Self-Morph-View:
+    Name: '&eПревращения'
+    Material: ENDER_EYE
+    Show: true
+    Lore:
+    - '&7Статус: {STATUS}'
+    - ''
+    - '&eНажмите, чтобы изменить превращение.'
+  Rename-Pet:
+    Name: '&eИмя вашего питомца'
+    Material: NAME_TAG
+    Show: true
+    Lore:
+    - '&7Напишите новое имя питомца в чат.'
+  Pages:
+    Name: ' &r(Страница {CURRENT_PAGE}/{MAX_PAGES})'
+  Enough-Mystery-Dust:
+    Lore:
+    - ''
+    - '&eНажмите для создания &b{COST} &eМистической пыли!'
+    Play-Sound:
+      Enabled: true
+      Sound: ENTITY_EXPERIENCE_ORB_PICKUP
+  Not-Enough-Mystery-Dust:
+    Lore:
+    - ''
+    - '&cНажмите для создания за&b {COST} &cМистической пыли!'
+    - '&cВам нужно еще&b {COST_LEFT} &cпыли!'
+    Play-Sound:
+      Enabled: true
+      Sound: ENTITY_ENDERMAN_TELEPORT
+  Enough-Mystery-Dust-To-Craft-Mystery-Box:
+    Lore:
+    - ''
+    - '&7Стоимость: &a{COST} &7Мистической пыли'
+    - '&aНажми чтобы скрафтить!'
+    Play-Sound:
+      Enabled: true
+      Sound: ENTITY_EXPERIENCE_ORB_PICKUP
+  Not-Enough-Mystery-Dust-To-Craft-Mystery-Box:
+    Lore:
+    - ''
+    - '&7Стоимость: &a{COST} &7Мистической пыли'
+    - '&cНе хватает пыли!'
+    Play-Sound:
+      Enabled: true
+      Sound: ENTITY_ENDERMAN_TELEPORT
+  Item-Unpurchasable:
+    Lore:
+    - ''
+    - '&cНе может быть скрафчен с помощью пыли.'
+    Play-Sound:
+      Enabled: true
+      Sound: ENTITY_ENDERMAN_TELEPORT
+  Failed-To-Purchase:
+    Play-Sound:
+      Enabled: true
+      Sound: ENTITY_ENDERMAN_TELEPORT
+  Multiple-Boxes-Loot-Book:
+  - '       &1&lMYSTERY BOX'
+  - ''
+  - '&0При открытии'
+  - '&0вы нашли в вашем'
+  - '&0Mystery Boxes:'
+  - '&9&l+{COST} Мистической пыли'
+  - ''
+  - '&9&l{MYSTERY_BOXES_OPENED} &0Mystery Boxes открыт'
+  - ''
+  - ''
+  - '&0Перейти на следующую страницу'
+  - '&0чтобы посмотреть предметы'
+  Settings-Status:
+  - '&e&l{SETTING}'
+  - ''
+  - '  &bСтатус: {STATUS}'
+  - ''
+  Failed-To-Deduct-Mystery-Dust:
+    Play-Sound:
+      Enabled: true
+      Sound: ENTITY_ENDERMAN_TELEPORT
+Reset-Buttons:
+  Reset-Cosmetics:
+    Name: '&cСбросить косметические предметы'
+    Material: RED_STAINED_GLASS
+    Show: true
+    Lore: ''
+    Play-Sound:
+      Enabled: true
+      Sound: ENTITY_EXPERIENCE_ORB_PICKUP
+  Reset-Hat:
+    Name: '&cСбросить шляпу'
+    Material: RED_STAINED_GLASS
+    Show: true
+    Lore: ''
+    Play-Sound:
+      Enabled: true
+      Sound: ENTITY_EXPERIENCE_ORB_PICKUP
+  Reset-Animated-Hat:
+    Name: '&cСбросить анимированную шляпу'
+    Material: RED_STAINED_GLASS
+    Show: true
+    Lore: ''
+    Play-Sound:
+      Enabled: true
+      Sound: ENTITY_EXPERIENCE_ORB_PICKUP
+  Reset-Particle:
+    Name: '&cСбросить частицы'
+    Material: RED_STAINED_GLASS
+    Show: true
+    Lore: ''
+    Play-Sound:
+      Enabled: true
+      Sound: ENTITY_EXPERIENCE_ORB_PICKUP
+  Reset-Suit:
+    Name: '&cСбросить костюм'
+    Material: RED_STAINED_GLASS
+    Show: true
+    Lore: ''
+    Play-Sound:
+      Enabled: true
+      Sound: ENTITY_EXPERIENCE_ORB_PICKUP
+  Reset-Gadget:
+    Name: '&cСбросить гаджеты'
+    Material: RED_STAINED_GLASS
+    Show: true
+    Lore: ''
+    Play-Sound:
+      Enabled: true
+      Sound: ENTITY_EXPERIENCE_ORB_PICKUP
+  Reset-Pet:
+    Name: '&cУбрать питомца'
+    Material: RED_STAINED_GLASS
+    Show: true
+    Lore: ''
+    Play-Sound:
+      Enabled: true
+      Sound: ENTITY_EXPERIENCE_ORB_PICKUP
+  Reset-Morph:
+    Name: '&cСбросить превращение'
+    Material: RED_STAINED_GLASS
+    Show: true
+    Lore: ''
+    Play-Sound:
+      Enabled: true
+      Sound: ENTITY_EXPERIENCE_ORB_PICKUP
+  Reset-Banner:
+    Name: '&cУбрать баннер'
+    Material: RED_STAINED_GLASS
+    Show: true
+    Lore: ''
+    Play-Sound:
+      Enabled: true
+      Sound: ENTITY_EXPERIENCE_ORB_PICKUP
+  Reset-Emote:
+    Name: '&cУбрать эмоции'
+    Material: RED_STAINED_GLASS
+    Show: true
+    Lore: ''
+    Play-Sound:
+      Enabled: true
+      Sound: ENTITY_EXPERIENCE_ORB_PICKUP
+  Reset-Cloak:
+    Name: '&cУбрать плащ'
+    Material: RED_STAINED_GLASS
+    Show: true
+    Lore: ''
+    Play-Sound:
+      Enabled: true
+      Sound: ENTITY_EXPERIENCE_ORB_PICKUP
+Cooldown-In-Action-Bar:
+  Enabled: true
+  Cooldown-Block:
+    Remain: '&c|'
+    Retain: '&a|'
+    Amount-Of-Blocks: 100
+  Cooldown-Message: '{NAME} &f{COOLDOWN_BLOCK} &f{TIME_LEFT}s'
+Item-Purchase-Messages:
+  Purchase-Hat: '{PREFIX}&eВы купили {ITEM}&e.'
+  Purchase-Animated-Hat: '{PREFIX}&eВы купили {ITEM}&e.'
+  Purchase-Particle: '{PREFIX}&eВы купили {ITEM}&e.'
+  Purchase-Suit: '{PREFIX}&eВы купили {ITEM}&e.'
+  Purchase-Gadget: '{PREFIX}&eВы купили{ITEM}&e.'
+  Purchase-Pet: '{PREFIX}&eВы купили {ITEM}&e.'
+  Purchase-Morph: '{PREFIX}&eВы купили {ITEM}&e.'
+  Purchase-Banner: '{PREFIX}&eВы купили {ITEM}&e.'
+  Purchase-Emote: '{PREFIX}&eВы купили {ITEM}&e.'
+  Purchase-Cloak: '{PREFIX}&eВы купили {ITEM}&e.'
+Checking-For-Update: '{PREFIX}&rПроверяются обновления...'
+Cooldown: '{PREFIX}&cТы должен подождать &b{COOLDOWN} &cчтобы использовать это!'
+Error: '{PREFIX}&cПри выполнении произошла ошибка, повторите снова!'
+No-Permission: '{PREFIX}&cУ вас нет прав {PERMISSION}!'
+World-Disabled: '{PREFIX}&cУ вас нет прав, чтобыы использовать это в данном мире!'
+Scanning-Player-Data-Files: '{PREFIX}&eПроверка игрока в базе данных...'
+Deleted-Player-Data-Files: '{PREFIX}&c{DELETED_FILES} &eфайлы удалены и осталось &a{NON_DELETED_FILES}
+  &eфайлов.'
+Folder-Is-Empty: '{PREFIX}&cДанных игрока не найдено!'
+Banners-Are-Disabled: '{PREFIX}&cБаннеры выключены!'
+Cloaks-Are-Disabled: '{PREFIX}&cПлащи выключены!'
+Emotes-Are-Disabled: '{PREFIX}&cЭмоции выключены!'
+Gadgets-Are-Disabled: '{PREFIX}&cКосметические гаджеты выключены!'
+Hats-Are-Disabled: '{PREFIX}&cШляпы выключены!'
+Animated-Hats-Are-Disabled: '{PREFIX}&cАнимированные шляпы выключены!'
+Morphs-Are-Disabled: '{PREFIX}&cПревращения выключены!'
+Particles-Are-Disabled: '{PREFIX}&cЧастицы выключены!'
+Pets-Are-Disabled: '{PREFIX}&cПитомцы выключены!'
+Suits-Are-Disabled: '{PREFIX}&cКостюмы выключены!'
+Equip-Animated-Hat-For-Player: '&eВы использовали {ANIMATED_HAT} для &b{PLAYER}&e.'
+Equip-Banner-For-Player: '&eВы использовали {BANNER} для &b{PLAYER}&e.'
+Equip-Cloak-For-Player: '&eВы использовали{CLOAK} для &b{PLAYER}&e.'
+Equip-Emote-For-Player: '&eВы использовали {EMOTE} для &b{PLAYER}&e.'
+Equip-Gadget-For-Player: '&eВы использовали{GADGET} для &b{PLAYER}&e.'
+Equip-Hat-For-Player: '&eВы использовали {HAT} для &b{PLAYER}&e.'
+Equip-Morph-For-Player: '&eВы превратили &b{PLAYER} &eв {MORPH}&e.'
+Equip-Particle-For-Player: '&eВы использовали {PARTICLE} for &b{PLAYER}&e.'
+Equip-Pet-For-Player: '&eВы заспавнили питомца {PET} &eдля &b{PLAYER}.'
+Equip-Suit-For-Player: '&eВы использовали {SUIT} для &b{PLAYER}&e.'
+Select-Animated-Hat: '&eВы установили {ANIMATED_HAT}&e.'
+Select-Banner: '&eВы установили{BANNER}&e.'
+Select-Cloak: '&eВы установили {CLOAK}&e.'
+Select-Emote: '&eВы установили {EMOTE}&e.'
+Select-Gadget: '&eВы установили {GADGET}&e.'
+Select-Hat: '&eВы установили {HAT}&e.'
+Select-Morph: '&eВы превращены в {MORPH}&e.'
+Select-Particle: '&eВы установили {PARTICLE}&e.'
+Select-Pet: '&eСпавним вашего &e питомца {PET} .'
+Select-Suit: '&eВы установили {SUIT}&e.'
+Reset-Animated-Hat: '&eВы сбросили анимированные шляпы.'
+Reset-Banner: '&eВы сбросили баннер.'
+Reset-Cloak: '&eВы сбросили плащ.'
+Reset-Cosmetics: '&eВы сбросили активную косметику.'
+Reset-Emote: '&eВы сбросили эмоции.'
+Reset-Gadget: '&eВы сбросили гаджеты.'
+Reset-Hat: '&eВы сбросили шляпу.'
+Reset-Morph: '&eВы сбросили превращение.'
+Reset-Particle: '&eВы сбросили частицу.'
+Reset-Pet: '&eВы сбросили питомца.'
+Reset-Suit: '&eВы сбросили костюм.'
+Reset-Suit-Helmet: '&eВы сбросили шлем.'
+Reset-Suit-Chestplate: '&eВы сбросили нагрудник.'
+Reset-Suit-Leggings: '&eВы сбросили поножи.'
+Reset-Suit-Boots: '&eВы сбросили обувь.'
+Characters-Too-Long: '{PREFIX}&cИмя питомца не может быть больше {CHARACTERS} символов!'
+Does-Not-Support-Characters: '{PREFIX}&cYou can only use English alphabet for the
+  name.'
+Does-Not-Support-Special-Characters: '{PREFIX}&cВы не можете использовать специальные
+  символы для имя.'
+No-Player-Nearby: '{PREFIX}&cРядом нет игроков'
+Not-Allowed-From-Console: '{PREFIX}&cТы не можешь использовать эту команду в консоли!'
+Not-Allow-Teleport-To-That-Location: '{PREFIX}&cВам не разрешено телепортироваться
+  в эту локацию!'
+Not-Allow-Cosmetics-In-This-Location: '{PREFIX}&cВам не разрешено использовать косметику
+  в этой локации!'
+Not-Enough-Space: '{PREFIX}&cНедостаточно места, чтобы использовать этот гаджет!'
+Not-Enough-Space-For-Target-Block: '{PREFIX}&cНедостаточно места, чтобы использовать
+  гаджет на блоке, который вы выбрали!'
+Not-On-Ground: '{PREFIX}&cВы должны быть на земле, чтобы использовать это!'
+Not-On-Flat-Ground: '{PREFIX}&cВы должны быть на ровной поверхности, чтобы использовать
+  это!'
+Stand-On-Two-Blocks-High: '{PREFIX}&cВы должны быть на два блока выше!'
+Player-Not-Found: '{PREFIX}&cИгрок не найдет!'
+Player-Is-Offline: '{PREFIX}&cЭтот игрок оффлайн!'
+Plugin-Reloaded: '{PREFIX}&3GadgetsMenu перезагружен.'
+Reloading-Plugin: '{PREFIX}&3Перезагрузка плагина...'
+Required-Number-Format: '{PREFIX}&cТребуется номер!'
+Required-Positive-Number: '{PREFIX}&cТребуется положительное число!'
+Target-A-Block: '{PREFIX}&cТВы должны выбрать блок!'
+Target-A-Player: '{PREFIX}&cВы должны выбрать игрока!'
+Remove-Item-From-Slot-To-Equip-Gadget: '{PREFIX}&cВы должны освободить слот {SLOT}(&b{ITEM}&c)
+  для использования гаджета!'
+Remove-Item-From-Slot-To-Equip-Morph: '{PREFIX}&cВы должны освободить слот {SLOT}(&b{ITEM}&c)
+  для превращения!'
+Remove-Item-From-Slot-To-Equip-Emote: '{PREFIX}&cВы должны освободить слот {SLOT}(&b{ITEM}&c)
+  для использования эмоции'
+Remove-Helmet-To-Equip-Hat: '{PREFIX}&cВы должны снять шлем, чтобы надеть шляпу!'
+Remove-Helmet-To-Equip-Animated-Hat: '{PREFIX}&cВы должны снять шлем, чтобы надеть
+  анимированную шляпу!'
+Remove-Helmet-To-Equip-Banner: '{PREFIX}&cВы должны снять шлем, чтобы использовать
+  баннер!'
+Remove-Helmet-To-Equip-Emote: '{PREFIX}&cВы должны снять шлем, чтобы использовать
+  эмоции'
+Remove-Armor-To-Equip-Suit: '{PREFIX}&cВы должны снять броню, чтобы использовать костюм'
+Failed-To-Purchase: '&cНе удалось выдать товар!'
+Item-Unpurchasable: '{PREFIX}&cВы не можете купить этот предмет!'
+Player-Not-Enough-MysteryDust: '{PREFIX}&cУ вас есть &b{MYSTERY_DUST} &cмистической
+  пыли!'
+Added-MysteryDust: '{PREFIX}&eВы дали &b{MYSTERY_DUST} &eмистической пыли для &b{PLAYER}&e.'
+Added-MysteryDust-To-All-Players: '{PREFIX}&eВы дали &b{MYSTERY_DUST} &eмистической
+  пыли для &b{ONLINE} &eигроков.'
+Check-MysteryDust: У &e{PLAYER} есть &b{MYSTERY_DUST} &eМистической пыли.
+Received-MysteryDust: '{PREFIX}&eВы получили &b{MYSTERY_DUST} &eмистической пыли от
+  игрока &b{PLAYER}&e.'
+Removed-MysteryDust: '{PREFIX}&eВы удалили &b{MYSTERY_DUST} &eмистической пыли у игрока
+  &b{PLAYER}&e.'
+Sent-MysteryDust: '{PREFIX}&eВы отправили &b{MYSTERY_DUST} &eмистической пыли игроку
+  &b{PLAYER}&e.'
+Set-MysteryDust: '{PREFIX}&eВы установили &b{MYSTERY_DUST} &eмистической пыли для
+  &b{PLAYER}&e.'
+Only-Have-MysteryDust: '{PREFIX}&b{PLAYER} &conly have &b{MYSTERY_DUST} &cmystery
+  dust!'
+Removed-MysteryDust-From-Player: '{PREFIX}&b{MYSTERY_DUST} &eмистическая пыль удалена
+  с вашего аккаунта.'
+Set-Player-MysteryDust: '{PREFIX}&eВаш баланс мистической пыли изменён до &b{MYSTERY_DUST}&e.'
+Not-Enough-MysteryDust-To-Purchase: '{PREFIX}&cИзвините, у вас не хватает мистической
+  пыли для покупки!'
+Pay-MysteryDust-To-Self: '{PREFIX}&cВы не можете дать пыль себе!'
+Gave-Mystery-Boxes: '{PREFIX}&eВы выдали &b{MYSTERY_BOXES} mystery boxes &eдля игрока
+  &b{PLAYER}&e.'
+Gave-Mystery-Boxes-To-All-Players: '{PREFIX}&eВы выдали &b{MYSTERY_BOXES} mystery
+  boxes &eдля &b{ONLINE} &eигроков.'
+Received-Mystery-Boxes: '{PREFIX}&eВы получили &b{MYSTERY_BOXES} mystery boxes &eот
+  игрока &b{PLAYER}&e.'
+Added-Mystery-Vault: '{PREFIX}&aСоздание мистического хранилища &f''{NAME}''&a.'
+Redefined-Mystery-Vault: '{PREFIX}&aРасположение мистического хранилища &f''{NAME}''
+  &a изменено.'
+Mystery-Vault-Same-Location: '{PREFIX}&cВы уже создали мистическое хранилище здесь.'
+Mystery-Vault-Is-Exists: '{PREFIX}&cХранилище с таким названием уже существует!'
+Do-Not-Have-Any-Mystery-Vault: '{PREFIX}&cУ вас нет мистического хранилища!'
+No-Mystery-Vault-Nearby: '{PREFIX}&cВ данном радиусе нет мистических хранилищ!'
+Removed-Mystery-Vault: '{PREFIX}&aВы расформировали мистическое хранилище &f''{NAME}''&a.'
+Mystery-Vault-Not-Found: '{PREFIX}&cНевозможно найти мистическое хранилише здесь!'
+Mystery-Vault-Not-Found-With-Name: '{PREFIX}&cНевозможно найти мистическое хранилище
+  под именем &f''{NAME}''&c!'
+Teleport-To-Mystery-Vault: '{PREFIX}&eВы телепортированы в мистическое хранилище &f''{NAME}''&e.'
+Open-Mystery-Vault-At-A-Time: '{PREFIX}&cКто-то уже находится в хранилище!'
+Can-Only-Open-One-Mystery-Box: '{PREFIX}&cПодождите, пока коробка окончательно откроется!'
+Purchase-Cancelled: '{PREFIX}&cПокупка отменена!'
+Mystery-Boxes-Are-Disabled: '{PREFIX}&cMystery Boxes отключены!'
+Crafted-Mystery-Box: '&aВы скрафтили &b{NAME}&a.'
+Gave-Mystery-Gifts: '{PREFIX}&eВы выдали &b{GIFTS} &eмистических подарков &e игроку
+  &r{PLAYER}&e.'
+Received-Mystery-Gifts: '{PREFIX}&eВы получили &b{GIFTS} &eмистический подарок&e от
+  игрока &r{PLAYER}&e.'
+Send-A-Gift-To-Player: '&aВы отправили подарок содержащий &b5 Mystery Boxes &aигроку
+  &r{PLAYER}&a!'
+Received-Gift: '&aВы получили подарок от игрока &r{PLAYER}&a! Посети &bмистическое
+  хранилище &aчтобы открыть его!'
+Mystery-Box-Was-Expired: '{PREFIX}&cСрок коробки истекает. Откройте ее быстрее.'
+Check-Mystery-Boxes: '&e{PLAYER} имеет &b{MYSTERY_BOXES} &eMystery Boxes.'
+Select-Mystery-Vault-Animation: '&eВы выбрали &b{ANIMATION} &eдля анимации мистического
+  хранилища.'
+Not-Enough-Mystery-Boxes: '&cТебе не хватает ящиков, которые можно открыть.'
+Counting-Mystery-Boxes: '&cИдёт подсчёт ящиков...'
+Emote-Is-Activated: '{PREFIX}&cЭмоции уже активированы!'
+Gadget-Is-Activated: '{PREFIX}&c{GADGET} уже активирован!'
+Morph-Skill-Is-Activated: '{PREFIX}&c{MORPH} уже активен!'
+Suit-Ability-Is-Activated: '{PREFIX}&c{SUIT} уже активен!'
+Is-Not-Morphed: '&cВы не превращены!'
+Morph-Ability-Is-Disabled: '{PREFIX}&c{MORPH} отключено!'
+Rename-Pet: '&eУстановка имени питомца &a{NAME}&e.'
+Rename-Pet-For-Player: '&eУстановка {PLAYER} имени питомца &a{NAME}&e.'
+Rename-Pet-In-Chat: |-
+  &eУ вас &c20 &eсекунд чтобы написать новое имя питомца в чат.
+  &eНажмите &2ОТМЕНА &eчтобы отменить переименование.
+Timed-Out: '&cВремя переименования вышло, вы не успели изменить имя своему петомцу!'
+Cancel-Rename-Pet: '&cОтмена переименования вашего питомца.'
+Rocket-Countdown: '&c&lРАКЕТА ВЗЛЕТИТ ЧЕРЕЗ {TIMER} {SECOND}!'
+Rocket-Lift-Off: '&a&lВЗЛЁТ!'
+Enabled-Self-Morph-View: '{PREFIX}&eВы включили видимость превращений!'
+Disabled-Self-Morph-View: '{PREFIX}&eВы выключили видимость превращений!'
+Enabled-Bypass-Cooldown: '{PREFIX}&eВы включили кулдаун.'
+Disabled-Bypass-Cooldown: '{PREFIX}&eВы отключили кулдаун.'
+Enabled-Random-Mystery-Vault-Animation: '{PREFIX}&eВы &aвключили &bрандомную анимацию
+  &eдля вашего хранилища.'
+Disabled-Random-Mystery-Vault-Animation: '{PREFIX}&eВы &cотключили &bрандомную анимацию
+  &eдля вашего хранилища.'
+Disabled-Command-While-Cosmetics-Activated: '{PREFIX}&cВы не можете использовать данную
+  команду пока косметика активирована!'
+Invalid-Type: '{PREFIX}&cЭтот {TYPE} который вы ввели недействителен!'
+Type-Is-Not-Enabled: '{PREFIX}&cЭтот {TYPE} не включен!'
+Turn-Off-Bumblebee-Song: '{PREFIX}&cПесня Bumblbee отключена!'
+Playing-Song: '{RANDOM_COLOR}Сейчас играет: {SONG}'
+Only-Boolean-Value-Can-Be-Accepted: '&cМожет быть принято только логическое значение!'
+Required-Time-Format: '{PREFIX}&cПожалуйста, заполните в правильной форме! Где (''ч''
+  для часов,''д'' для дней, ''м'' для месяцев).'
+Required-Full-Data: '{PREFIX}&cУбедитесь, что ваши данные не пропали.'
+Already-Activate-One: '{PREFIX}&cГаджет {GADGET} уже активирован! Пожалуйста, попробуйте
+  позже.'
+Gadget-Activated-In-Same-Area: '{PREFIX}&cЭтот гаджет активирован в этой области!
+  Попробуйте позже.'
+Enabled: '&aВключено'
+Disabled: '&cВыключено'
+Cooldown-Bypass: Перезарядка Bypass
+Self-Morph-View: Превращение
+Second: сек.
+Seconds: сек.
+Minute: мин.
+Minutes: мин.
+Hour: ч.
+Hours: ч.
+Day: дн.
+Days: дн.
+No-Cosmetic-Equipped: none
+No-Recent-Loot-Found: none
+Cosmetic-Reset-Completed: '&eЗавершен сброс косметически.'
+Failed-To-Deduct-Mystery-Dust: '{PREFIX}&cНе удалось вычесть мистическую пыль. Пожалуйста,
+  попробуйте еще раз.'
+Loading: '&cЗагрузка...'
+Cosmetic-Usage-Is-Disabled: '{PREFIX}&cYou''re not allowed to equip cosmetics at the
+  moment.'
+Failed-To-Reload-Plugin: '{PREFIX}&cUnable to reload GadgetsMenu plugin. The plugin
+  has been disabled. You need to restart the server to re-enable the plugin.'
+Reset-Pet-Name: '&eSuccessfully reset the pet name.'
+Reset-Pet-Name-For-Player: '&eSuccessfully reset {PLAYER}''s pet name.'
